@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 1: Metodologías de trabajo</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
+
+</head>
+
+<body>
+    <h1>Formulario de Evaluación</h1>
+    <form action="/formpage1" method="post" enctype="application/json">
+        <!-- Sección 0: Introducción -->
+        <h2>Sección 0: Introducción</h2>
+        <label for="nombre">Ingrese el nombre del colaborador/a:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <!-- Sección 1: Metodologías de trabajo -->
+        <h2>Sección 1: Metodologías de trabajo</h2>
+        <fieldset>
+            <legend>¿Cómo valoraría los siguientes aspectos del colaborador?</legend>
+            <div>
+                <!-- ORGANIZACION PERSONAL -->
+                <label class="form-pregunta" for="organizacion_personal">Organización personal</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="org-no-relevante" name="organizacion_personal" value="no_relevante">
+                        <label class="no-relevante-label" for="org-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="org-no-seguro" name="organizacion_personal" value="no_seguro">
+                        <label class="no-seguro-label" for="org-no-relevante">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="org-podria-mejorar" name="organizacion_personal" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="org-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="org-estandar" name="organizacion_personal" value="estandar">
+                        <label class="estandar-label" for="org-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="org-destacable" name="organizacion_personal" value="destacable">
+                        <label class="destacable-label" for="org-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="org-muy-destacable" name="organizacion_personal" value="muy_destacable">
+                        <label class="muy-destacable-label" for="org-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+                <!-- GESTIÓN DEL TIEMPO -->
+                <label class="form-pregunta" for="gestion_tiempo">Gestión del tiempo</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="gt-no-relevante" name="gestion_tiempo" value="no_relevante">
+                        <label class="no-relevante-label" for="gt-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="gt-no-seguro" name="gestion_tiempo" value="no_seguro">
+                        <label class="no-seguro-label" for="gt-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="gt-podria-mejorar" name="gestion_tiempo" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="gt-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="gt-estandar" name="gestion_tiempo" value="estandar">
+                        <label class="estandar-label" for="gt-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="gt-destacable" name="gestion_tiempo" value="destacable">
+                        <label class="destacable-label" for="gt-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="gt-muy-destacable" name="gestion_tiempo" value="muy_destacable">
+                        <label class="muy-destacable-label" for="gt-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+                <!-- AUTONOMÍA -->
+                <label class="form-pregunta" for="autonomia">Autonomía</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="aut-no-relevante" name="autonomia" value="no_relevante">
+                        <label class="no-relevante-label" for="aut-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-no-seguro" name="autonomia" value="no_seguro">
+                        <label class="no-seguro-label" for="aut-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-podria-mejorar" name="autonomia" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="aut-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-estandar" name="autonomia" value="estandar">
+                        <label class="estandar-label" for="aut-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-destacable" name="autonomia" value="destacable">
+                        <label class="destacable-label" for="aut-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-muy-destacable" name="autonomia" value="muy_destacable">
+                        <label class="muy-destacable-label" for="aut-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+
+                <!-- Comprende expectativas y consignas -->
+                <label class="form-pregunta" for="comprende_expectativas">Comprende expectativas y consignas</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="comp-no-relevante" name="comprende_expectativas" value="no_relevante">
+                        <label class="no-relevante-label" for="comp-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="comp-no-seguro" name="comprende_expectativas" value="no_seguro">
+                        <label class="no-seguro-label" for="comp-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="comp-podria-mejorar" name="comprende_expectativas"
+                            value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="comp-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="comp-estandar" name="comprende_expectativas" value="estandar">
+                        <label class="estandar-label" for="comp-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="comp-destacable" name="comprende_expectativas" value="destacable">
+                        <label class="destacable-label" for="comp-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="comp-muy-destacable" name="comprende_expectativas"
+                            value="muy_destacable">
+                        <label class="muy-destacable-label" for="comp-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+                <!-- Planificación -->
+                <label class="form-pregunta" for="planificacion">Planificación</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="plan-no-relevante" name="planificacion" value="no_relevante">
+                        <label class="no-relevante-label" for="plan-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="plan-no-seguro" name="planificacion" value="no_seguro">
+                        <label class="no-seguro-label" for="plan-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="plan-podria-mejorar" name="planificacion" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="plan-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="plan-estandar" name="planificacion" value="estandar">
+                        <label class="estandar-label" for="plan-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="plan-destacable" name="planificacion" value="destacable">
+                        <label class="destacable-label" for="plan-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="plan-muy-destacable" name="planificacion" value="muy_destacable">
+                        <label class="muy-destacable-label" for="plan-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+
+                <!-- Meticulosidad y atención al detalle -->
+                <!-- Meticulosidad y atención al detalle -->
+                <label class="form-pregunta" for="atencion_detalle">Meticulosidad y atención al detalle</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="met-no-relevante" name="atencion_detalle" value="no_relevante">
+                        <label class="no-relevante-label" for="met-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="met-no-seguro" name="atencion_detalle" value="no_seguro">
+                        <label class="no-seguro-label" for="met-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="met-podria-mejorar" name="atencion_detalle" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="met-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="met-estandar" name="atencion_detalle" value="estandar">
+                        <label class="estandar-label" for="met-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="met-destacable" name="atencion_detalle" value="destacable">
+                        <label class="destacable-label" for="met-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="met-muy-destacable" name="atencion_detalle" value="muy_destacable">
+                        <label class="muy-destacable-label" for="met-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+
+                <!-- Sistematización y automatización -->
+                <label class="form-pregunta" for="automatizacion">Sistematización y automatización</label>
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="aut-no-relevante" name="automatizacion" value="no_relevante">
+                        <label class="no-relevante-label" for="aut-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-no-seguro" name="automatizacion" value="no_seguro">
+                        <label class="no-seguro-label" for="aut-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-podria-mejorar" name="automatizacion" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="aut-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-estandar" name="automatizacion" value="estandar">
+                        <label class="estandar-label" for="aut-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-destacable" name="automatizacion" value="destacable">
+                        <label class="destacable-label" for="aut-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="aut-muy-destacable" name="automatizacion" value="muy_destacable">
+                        <label class="muy-destacable-label" for="aut-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+
+                <!-- Aprendizaje y mejora continua -->
+                <label class="form-pregunta" for="mejora_continua">Aprendizaje y mejora continua</label>
+
+                <div class="rating">
+                    <div class="form-option">
+                        <input type="radio" id="apr-no-relevante" name="mejora_continua" value="no_relevante">
+                        <label class="no-relevante-label" for="apr-no-relevante">No relevante a su rol</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="apr-no-seguro" name="mejora_continua" value="no_seguro">
+                        <label class="no-seguro-label" for="apr-no-seguro">No estoy seguro/a</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="apr-podria-mejorar" name="mejora_continua" value="podria_mejorar">
+                        <label class="podria-mejorar-label" for="apr-podria-mejorar">Podría mejorar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="apr-estandar" name="mejora_continua" value="estandar">
+                        <label class="estandar-label" for="apr-estandar">Estándar</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="apr-destacable" name="mejora_continua" value="destacable">
+                        <label class="destacable-label" for="apr-destacable">Destacable</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" id="apr-muy-destacable" name="mejora_continua" value="muy_destacable">
+                        <label class="muy-destacable-label" for="apr-muy-destacable">Muy destacable</label>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Repetir el bloque anterior para cada aspecto a valorar -->
+        </fieldset>
+        <button> Siguiente </button>
+    </form>
+
+</body>
+
+</html>

@@ -17,10 +17,29 @@ body {
   .form-group {
     margin-bottom: 15px;
   }
-  label {
+  .rating{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-pregunta{
     display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 0;
     font-weight: bold;
+    background-color: #eaeaea;
+  }
+
+  .form-option {
+    display: block;
     margin-bottom: 5px;
+    width: 20%;
+  }
+
+  label {
+    font-size: 14px;
+    text-align: center;
   }
   select {
     width: 100%;

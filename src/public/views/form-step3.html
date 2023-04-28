@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 3: Comunicación</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
+
+</head>
+
+<body>
+    <h1>Formulario de Evaluación</h1>
+    <form action="/formpage1" method="post" enctype="application/json">
+
+        <!-- Sección 2: Actitudinal -->
+        <h2>Sección 3: Comunicación</h2>
+        <fieldset>
+            <legend>¿Cómo valoraría los siguientes aspectos del colaborador?</legend>
+
+<!-- CLARIDAD CONCEPTUAL -->
+<label class="form-pregunta" for="claridad_conceptual">Claridad conceptual</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="cc-no-relevante" name="claridad_conceptual" value="no_relevante">
+        <label class="no-relevante-label" for="cc-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="cc-no-seguro" name="claridad_conceptual" value="no_seguro">
+        <label class="no-seguro-label" for="cc-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="cc-podria-mejorar" name="claridad_conceptual" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="cc-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="cc-claro" name="claridad_conceptual" value="claro">
+        <label class="claro-label" for="cc-claro">Claro</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="cc-muy-claro" name="claridad_conceptual" value="muy_claro">
+        <label class="muy-claro-label" for="cc-muy-claro">Muy claro</label>
+    </div>
+</div>
+
+<!-- SINTESIS -->
+<label class="form-pregunta" for="sintesis">Síntesis</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="sin-no-relevante" name="sintesis" value="no_relevante">
+        <label class="no-relevante-label" for="sin-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="sin-no-seguro" name="sintesis" value="no_seguro">
+        <label class="no-seguro-label" for="sin-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="sin-podria-mejorar" name="sintesis" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="sin-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="sin-estandar" name="sintesis" value="estandar">
+        <label class="estandar-label" for="sin-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="sin-destacable" name="sintesis" value="destacable">
+        <label class="destacable-label" for="sin-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="sin-muy-destacable" name="sintesis" value="muy_destacable">
+        <label class="muy-destacable-label" for="sin-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- RELEVANCIA -->
+<label class="form-pregunta" for="relevancia">Relevancia</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="relev-no-relevante" name="relevancia" value="no_relevante">
+        <label class="no-relevante-label" for="relev-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="relev-no-seguro" name="relevancia" value="no_seguro">
+        <label class="no-seguro-label" for="relev-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="relev-podria-mejorar" name="relevancia" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="relev-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="relev-estandar" name="relevancia" value="estandar">
+        <label class="estandar-label" for="relev-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="relev-destacable" name="relevancia" value="destacable">
+        <label class="destacable-label" for="relev-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="relev-muy-destacable" name="relevancia" value="muy_destacable">
+        <label class="muy-destacable-label" for="relev-muy-destacable">Muy destacable</label>
+    </div>
+</div>    
+
+
+<!-- PARTICIPACIÓN EN REUNIONES -->
+<label class="form-pregunta" for="participacion_reuniones">Participación en reuniones</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="part-no-relevante" name="participacion_reuniones" value="no_relevante">
+        <label class="no-relevante-label" for="part-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="part-no-seguro" name="participacion_reuniones" value="no_seguro">
+        <label class="no-seguro-label" for="part-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="part-podria-mejorar" name="participacion_reuniones" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="part-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="part-estandar" name="participacion_reuniones" value="estandar">
+        <label class="estandar-label" for="part-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="part-destacable" name="participacion_reuniones" value="destacable">
+        <label class="destacable-label" for="part-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="part-muy-destacable" name="participacion_reuniones" value="muy_destacable">
+        <label class="muy-destacable-label" for="part-muy-destacable">Muy destacable</label>
+    </div>
+</div>    
+
+<!-- CONFECCIÓN DE DOCUMENTOS E INFORMES -->
+<label class="form-pregunta" for="confeccion_documentos">Escrito: Confección de documentos e informes</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="doc-no-relevante" name="confeccion_documentos" value="no_relevante">
+        <label class="no-relevante-label" for="doc-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="doc-no-seguro" name="confeccion_documentos" value="no_seguro">
+        <label class="no-seguro-label" for="doc-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="doc-podria-mejorar" name="confeccion_documentos" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="doc-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="doc-estandar" name="confeccion_documentos" value="estandar">
+        <label class="estandar-label" for="doc-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="doc-destacable" name="confeccion_documentos" value="destacable">
+        <label class="destacable-label" for="doc-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="doc-muy-destacable" name="confeccion_documentos" value="muy_destacable">
+        <label class="muy-destacable-label" for="doc-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- ESTILO -->
+<label class="form-pregunta" for="estilo">Escrito: Estilo</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="est-no-relevante" name="estilo" value="no_relevante">
+        <label class="no-relevante-label" for="est-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="est-no-seguro" name="estilo" value="no_seguro">
+        <label class="no-seguro-label" for="est-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="est-podria-mejorar" name="estilo" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="est-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="est-estandar" name="estilo" value="estandar">
+        <label class="estandar-label" for="est-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="est-destacable" name="estilo" value="destacable">
+        <label class="destacable-label" for="est-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="est-muy-destacable" name="estilo" value="muy_destacable">
+        <label class="muy-destacable-label" for="est-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- ORTOGRAFÍA -->
+<label class="form-pregunta" for="ortografia">Escrito: Ortografía</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="ort-no-relevante" name="ortografia" value="no_relevante">
+        <label class="no-relevante-label" for="ort-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ort-no-seguro" name="ortografia" value="no_seguro">
+        <label class="no-seguro-label" for="ort-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ort-podria-mejorar" name="ortografia" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="ort-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ort-estandar" name="ortografia" value="estandar">
+        <label class="estandar-label" for="ort-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ort-destacable" name="ortografia" value="destacable">
+        <label class="destacable-label" for="ort-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ort-muy-destacable" name="ortografia" value="muy_destacable">
+        <label class="muy-destacable-label" for="ort-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- LENGUAJE CORPORAL -->
+<label class="form-pregunta" for="lenguaje_corporal">Oral: Lenguaje corporal</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="lc-no-relevante" name="lenguaje_corporal" value="no_relevante">
+        <label class="no-relevante-label" for="lc-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="lc-no-seguro" name="lenguaje_corporal" value="no_seguro">
+        <label class="no-seguro-label" for="lc-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="lc-podria-mejorar" name="lenguaje_corporal" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="lc-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="lc-estandar" name="lenguaje_corporal" value="estandar">
+        <label class="estandar-label" for="lc-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="lc-destacable" name="lenguaje_corporal" value="destacable">
+        <label class="destacable-label" for="lc-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="lc-muy-destacable" name="lenguaje_corporal" value="muy_destacable">
+        <label class="muy-destacable-label" for="lc-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- TONO APROPIADO (AMENO Y CORDIAL) -->
+<label class="form-pregunta" for="tono_apropiado">Oral: Tono apropiado (ameno y cordial)</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="ta-no-relevante" name="tono_apropiado" value="no_relevante">
+        <label class="no-relevante-label" for="ta-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ta-no-seguro" name="tono_apropiado" value="no_seguro">
+        <label class="no-seguro-label" for="ta-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ta-podria-mejorar" name="tono_apropiado" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="ta-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ta-estandar" name="tono_apropiado" value="estandar">
+        <label class="estandar-label" for="ta-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ta-destacable" name="tono_apropiado" value="destacable">
+        <label class="destacable-label" for="ta-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="ta-muy-destacable" name="tono_apropiado" value="muy_destacable">
+        <label class="muy-destacable-label" for="ta-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- ESCUCHA -->
+<label class="form-pregunta" for="escucha">Escucha</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="e-no-relevante" name="escucha" value="no_relevante">
+        <label class="no-relevante-label" for="e-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="e-no-seguro" name="escucha" value="no_seguro">
+        <label class="no-seguro-label" for="e-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="e-podria-mejorar" name="escucha" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="e-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="e-estandar" name="escucha" value="estandar">
+        <label class="estandar-label" for="e-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="e-destacable" name="escucha" value="destacable">
+        <label class="destacable-label" for="e-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="e-muy-destacable" name="escucha" value="muy_destacable">
+        <label class="muy-destacable-label" for="e-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- PERSUASIÓN Y RETÓRICA -->
+<label class="form-pregunta" for="persuasion_retorica">Oral: Persuasión y retórica</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="pr-no-relevante" name="persuasion_retorica" value="no_relevante">
+        <label class="no-relevante-label" for="pr-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="pr-no-seguro" name="persuasion_retorica" value="no_seguro">
+        <label class="no-seguro-label" for="pr-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="pr-podria-mejorar" name="persuasion_retorica" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="pr-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="pr-estandar" name="persuasion_retorica" value="estandar">
+        <label class="estandar-label" for="pr-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="pr-destacable" name="persuasion_retorica" value="destacable">
+        <label class="destacable-label" for="pr-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="pr-muy-destacable" name="persuasion_retorica" value="muy_destacable">
+        <label class="muy-destacable-label" for="pr-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- NEGOCIACIÓN -->
+<label class="form-pregunta" for="negociacion">Oral: Negociación</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="neg-no-relevante" name="negociacion" value="no_relevante">
+        <label class="no-relevante-label" for="neg-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="neg-no-seguro" name="negociacion" value="no_seguro">
+        <label class="no-seguro-label" for="neg-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="neg-podria-mejorar" name="negociacion" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="neg-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="neg-estandar" name="negociacion" value="estandar">
+        <label class="estandar-label" for="neg-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="neg-destacable" name="negociacion" value="destacable">
+        <label class="destacable-label" for="neg-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="neg-muy-destacable" name="negociacion" value="muy_destacable">
+        <label class="muy-destacable-label" for="neg-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- DISEÑO CONCEPTUAL -->
+<label class="form-pregunta" for="diseno_conceptual">Visual / Presentaciones: Diseño conceptual</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="dis-no-relevante" name="diseno_conceptual" value="no_relevante">
+        <label class="no-relevante-label" for="dis-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-no-seguro" name="diseno_conceptual" value="no_seguro">
+        <label class="no-seguro-label" for="dis-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-podria-mejorar" name="diseno_conceptual" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="dis-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-estandar" name="diseno_conceptual" value="estandar">
+        <label class="estandar-label" for="dis-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-destacable" name="diseno_conceptual" value="destacable">
+        <label class="destacable-label" for="dis-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-muy-destacable" name="diseno_conceptual" value="muy_destacable">
+        <label class="muy-destacable-label" for="dis-muy-destacable">Muy destacable</label>
+    </div>
+</div>
+
+<!-- DISEÑO GRÁFICO -->
+<label class="form-pregunta" for="diseno_grafico">Visual / Presentaciones: Diseño gráfico</label>
+
+<div class="rating">
+    <div class="form-option">
+        <input type="radio" id="dis-no-relevante" name="diseno_grafico" value="no_relevante">
+        <label class="no-relevante-label" for="dis-no-relevante">No relevante a su rol</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-no-seguro" name="diseno_grafico" value="no_seguro">
+        <label class="no-seguro-label" for="dis-no-seguro">No estoy seguro/a</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-podria-mejorar" name="diseno_grafico" value="podria_mejorar">
+        <label class="podria-mejorar-label" for="dis-podria-mejorar">Podría mejorar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-estandar" name="diseno_grafico" value="estandar">
+        <label class="estandar-label" for="dis-estandar">Estándar</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-destacable" name="diseno_grafico" value="destacable">
+        <label class="destacable-label" for="dis-destacable">Destacable</label>
+    </div>
+    <div class="form-option">
+        <input type="radio" id="dis-muy-destacable" name="diseno_grafico" value="muy_destacable">
+        <label class="muy-destacable-label" for="dis-muy-destacable">Muy destacable</label>
+    </div>
+</div> 
+ 
+            <!-- Repetir el bloque anterior para cada aspecto a valorar -->
+        </fieldset>
+        <button> Siguiente </button>
+    </form>
+
+</body>
+
+</html>
