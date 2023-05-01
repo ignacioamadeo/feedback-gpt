@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 7: Oportunidades de desarrollo de potencial    </title>
+    <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
+
+</head>
+
+<body>
+    <h1>Formulario de Evaluación</h1>
+    <form action="/formpagefinal" method="post" enctype="application/json">
+
+        <!-- Sección 7: Desarrollo -->
+        <h2>Cierre</h2>
+        <fieldset>
+            <label for="mail">Ingrese su mail para recibir un informe detallado:</label>
+            <input type="text" id="mail" name="mail">    
+
+            <label for="mail_delete">Quiero que mi mail sea eliminado de la base de datos luego de enviar el informe</label>
+            <input type="radio" id="rmail_delete" name="mail_delete" value="mail_delete">
+
+            <label for="mail_suscribe">Quiero recibir por mail otras herramientas como esta</label>
+            <input type="radio" id="mail_suscribe" name="mail_suscribe" value="mail_suscribe">
+
+        </fieldset>
+        <button> Finalizar </button>
+    </form>
+
+</body>
+
+</html>

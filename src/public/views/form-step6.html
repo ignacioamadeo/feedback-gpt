@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección 6: Principal aporte de valor</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
+
+</head>
+
+<body>
+    <h1>Formulario de Evaluación</h1>
+    <form action="/formpage6" method="post" enctype="application/json">
+
+        <!-- Sección 6: Aporte de valor -->
+        <h2>Sección 6 de 7: Principal aporte de valor</h2>
+        <fieldset>
+
+        <!-- Pregunta 1: -->
+        <label class="form-pregunta" for="aporte_equipo">
+            ¿Cuál es su principal aporte de valor al equipo?
+            </label>
+        <textarea id="aporte_equipo" name="aporte_equipo"></textarea>
+
+        <!-- Pregunta 2: -->
+        <label class="form-pregunta" for="aporte_organizacion">
+            ¿Cuál es su principal aporte de valor al la organización? (si aplica)
+            </label>
+        <textarea id="aporte_organizacion" name="aporte_organizacion"></textarea>
+
+        <!-- Pregunta 3:-->
+        <label class="form-pregunta" for="singularidad_aporte">
+            ¿Cuán único es su aporte de valor? ¿Cuán fundamental es?
+            ¿Cómo sería el equipo y la organización sin la persona?
+            ¿Cuán fácil resultaría conseguir otro perfil similar?            
+        </label>
+        <textarea id="singularidad_aporte" name="singularidad_aporte"></textarea>
+
+        </fieldset>
+        <button> Siguiente </button>
+    </form>
+
+</body>
+
+</html>
